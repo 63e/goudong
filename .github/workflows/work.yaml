@@ -4,11 +4,12 @@ on:
   repository_dispatch:
   release:
     types: published
-  # push:
-  #   branches:
-  #     - master
+    push:
+     branches:
+       - master
   schedule:
     - cron: 0 16 * * *
+  workflow_dispatch:
   watch:
     types: started
     
